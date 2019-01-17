@@ -2,7 +2,7 @@
 
 # Usage 
 
-Adds R scripts to `/script` and trigger them in `boot.sh`.
+Adds R scripts to `/script`, commit, push and see them running in travis-CI.
 
 > Now in travis-CI: trigger the scripts using the REST-api, or just add schedulers.
 
