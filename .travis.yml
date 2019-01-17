@@ -2,16 +2,7 @@ install: true
 services:
   - docker
 
-before_install:
-  - docker build -t mydocker .
-  - docker run mydocker /bin/sh -c "./boot.sh"
-
-script: ./boot.sh
-
-# 
 # turbo-builds: docker save + reload similar builds
-#
-
 before_cache:
   - >
     mkdir -p $HOME/docker && docker images -a --filter='dangling=false' --format '{{.Repository}}:{{.Tag}} {{.ID}}'
@@ -19,8 +10,13 @@ before_cache:
 
 before_install:
   - if [[ -d $HOME/docker ]]; then ls $HOME/docker/*.tar.gz | xargs -I {file} sh -c "zcat {file} | docker load"; fi
+  - docker build -t mydocker .
+  - docker run mydocker /bin/sh -c "./boot.sh"
 
 cache:
   bundler: true
   directories:
     - $HOME/docker
+
+script: ./boot.sh
+
