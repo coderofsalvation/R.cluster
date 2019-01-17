@@ -16,6 +16,7 @@ This will give us the following for free:
 * email notifications for scriptfailures
 * realtime html-embeddable status-badges: <img src="https://travis-ci.org/coderofsalvation/R.cluster.svg?branch=master"/>
 * easy collaboration + maintenance (using git)
+* fast rebuilds / installation of R (packages) using tag+branch-based docker-cache
 
 # Async
 
