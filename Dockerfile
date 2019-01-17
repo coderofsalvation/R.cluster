@@ -7,7 +7,7 @@ MAINTAINER Leon van Kammen <leonvankammen@gmail.com>
 ADD boot.sh /
 ADD script /script
 
-RUN apk add --no-cache R R-dev R-doc curl libressl-dev curl-dev libxml2-dev gcc g++ git coreutils bash ncurses
+RUN apk add --no-cache R R-dev R-doc gcc g++ git coreutils bash ncurses
 
 RUN git clone https://github.com/ropensci/git2r.git &&\
   R CMD INSTALL --configure-args="--with-libssl-include=/usr/lib/" git2r &&\
