@@ -2,13 +2,16 @@
 
 # Usage 
 
-Adds R scripts to `/script`, commit, push and see them running in travis-CI.
+Adds R scripts to `/script`, commit, push and then:
+
+* schedule / monitor them in travis-CI.
+* plot results using D3 on a github page
 
 > Now in travis-CI: trigger the scripts using the REST-api, or just add schedulers.
 
 # Background
 
-I was wondering how to get automatic R processes up and running, using popular services.
+I was wondering how to get an serverless R 'farm' up and running, using popular services.
 With little modifications it'll work with other docker-compatible CI services too (__gitlab__, __jenkins__ e.g.).
 This will give us the following for free:
 
