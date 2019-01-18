@@ -13,14 +13,15 @@ Adds R scripts to `/script`, commit, push and then:
 
 I was wondering how to get a serverless R 'farm' up and running, using popular services.
 With little modifications it'll work with other docker-compatible CI services too (__gitlab__, __jenkins__ e.g.).
-This will give us the following for free:
+
+### Just by pushing R-code to this repo, you'll get:
 
 * no server hassle
+* deploy R results to a webpage (see final thoughts below)
 * email notifications for scriptfailures
 * realtime html-embeddable status-badges: <img src="https://travis-ci.org/coderofsalvation/R.cluster.svg?branch=master"/>
 * easy collaboration + maintenance (using git)
 * fast rebuilds / installation of R (packages) using tag+branch-based docker-cache
-* [TODO] automatically deploy results to github (web)page
 
 # Async
 
