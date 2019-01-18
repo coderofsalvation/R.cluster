@@ -4,8 +4,7 @@ FROM artemklevtsov/r-alpine:tidyverse
 
 MAINTAINER Leon van Kammen <leonvankammen@gmail.com>
 
-ADD boot.sh /
-ADD script /script
+ADD . / /
 
 #RUN apk add --no-cache R gcc g++ git coreutils bash ncurses
 #RUN apk add --no-cache R R-dev R-doc gcc g++ git coreutils bash ncurses
