@@ -28,3 +28,7 @@ In case your code is not written async using promises, there's good news:
 * `boot.sh` is able to run R-scripts in parallel.
 
 > Not ideal (hint: promises), but sometimes good enough
+
+# Final thoughts
+
+Use gitlab-ci, it's much faster/easier compared to github <-> travis.

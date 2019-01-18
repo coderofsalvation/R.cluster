@@ -6,6 +6,8 @@ MAINTAINER Leon van Kammen <leonvankammen@gmail.com>
 
 ADD . / /
 
+ENV GH-KEY=default 
+
 RUN apk add --no-cache git git-subtree openssh-client
 
 #RUN apk add --no-cache R gcc g++ git coreutils bash ncurses
