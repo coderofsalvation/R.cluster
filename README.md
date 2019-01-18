@@ -11,7 +11,7 @@ Adds R scripts to `/script`, commit, push and then:
 
 # Background
 
-I was wondering how to get an serverless R 'farm' up and running, using popular services.
+I was wondering how to get a serverless R 'farm' up and running, using popular services.
 With little modifications it'll work with other docker-compatible CI services too (__gitlab__, __jenkins__ e.g.).
 This will give us the following for free:
 
@@ -20,6 +20,7 @@ This will give us the following for free:
 * realtime html-embeddable status-badges: <img src="https://travis-ci.org/coderofsalvation/R.cluster.svg?branch=master"/>
 * easy collaboration + maintenance (using git)
 * fast rebuilds / installation of R (packages) using tag+branch-based docker-cache
+* [TODO] automatically deploy results to github (web)page
 
 # Async
 
@@ -32,3 +33,5 @@ In case your code is not written async using promises, there's good news:
 # Final thoughts
 
 Use gitlab-ci, it's much faster/easier compared to github <-> travis.
+After spending an hour on travis pushing to a gh-page, my conclusion is that it's becoming too hairy.
+Gitlab is definately winning here, by combining repo & CI from the start.
