@@ -6,7 +6,7 @@ MAINTAINER Leon van Kammen <leonvankammen@gmail.com>
 
 ADD . / /
 
-RUN apk add --no-cache git git-subtree 
+RUN apk add --no-cache git git-subtree openssh-client
 
 #RUN apk add --no-cache R gcc g++ git coreutils bash ncurses
 #RUN apk add --no-cache R R-dev R-doc gcc g++ git coreutils bash ncurses
